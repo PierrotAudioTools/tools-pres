@@ -1,42 +1,42 @@
 const tools = [
   {
-    name: "Batch Renamer",
-    category: "Productivité",
+    name: "Session Prep",
+    category: "Pré-production",
     status: "Disponible",
     description:
-      "Renomme rapidement des lots de fichiers avec des règles simples et un aperçu avant validation.",
-    formats: ["macOS", "ZIP", "Version 1.2"],
+      "Prépare rapidement une session audio: renommage de fichiers, rangement de stems, normalisation de structures et vérifications avant livraison.",
+    formats: ["macOS", "Utility App", "Version 1.2"],
     primaryLabel: "Télécharger",
-    primaryUrl: "https://github.com/",
-    secondaryLabel: "Voir le repo",
-    secondaryUrl: "https://github.com/",
-    note: "Idéal pour nettoyer des exports, assets ou lots de documents."
+    primaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
+    secondaryLabel: "Voir la release",
+    secondaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
+    note: "Pensé pour gagner du temps avant mix, mastering ou livraison client."
   },
   {
-    name: "Markdown Cleaner",
-    category: "Édition",
+    name: "Loudness Snap",
+    category: "Analyse",
     status: "Disponible",
     description:
-      "Nettoie, reformate et homogénéise des fichiers Markdown pour garder une doc plus propre et plus lisible.",
+      "Analyse rapidement des fichiers ou exports pour obtenir une lecture claire de niveau, cohérence et état global avant publication ou review.",
     formats: ["Cross-platform", "CLI", "Open Source"],
     primaryLabel: "Télécharger",
-    primaryUrl: "https://github.com/",
+    primaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
     secondaryLabel: "Documentation",
-    secondaryUrl: "https://github.com/",
-    note: "Pratique pour standardiser rapidement de gros ensembles de notes ou docs."
+    secondaryUrl: "https://github.com/PierrotAudioTools/tools-pres",
+    note: "Utile pour vérifier vite un render, un stem pack ou un export final."
   },
   {
-    name: "Asset Packager",
-    category: "Build",
+    name: "Stem Packager",
+    category: "Delivery",
     status: "Disponible",
     description:
-      "Assemble et prépare des fichiers de livraison dans une structure claire, prête à partager ou publier.",
+      "Assemble des stems, bounces et éléments de projet dans une structure propre, prête à archiver, partager ou envoyer à un collaborateur.",
     formats: ["Windows", "macOS", "ZIP"],
     primaryLabel: "Télécharger",
-    primaryUrl: "https://github.com/",
+    primaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
     secondaryLabel: "Release notes",
-    secondaryUrl: "https://github.com/",
-    note: "Utile pour distribuer des packs, exports et livrables techniques."
+    secondaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
+    note: "Conçu pour les workflows de collaboration, de review et de livraison propre."
   }
 ];
 
