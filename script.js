@@ -2,6 +2,7 @@ const tools = [
   {
     name: "Session Prep",
     category: "Pré-production",
+    access: "Téléchargement direct",
     status: "Disponible",
     description:
       "Prépare rapidement une session audio: renommage de fichiers, rangement de stems, normalisation de structures et vérifications avant livraison.",
@@ -15,12 +16,13 @@ const tools = [
   {
     name: "Loudness Snap",
     category: "Analyse",
+    access: "Repo GitHub",
     status: "Disponible",
     description:
       "Analyse rapidement des fichiers ou exports pour obtenir une lecture claire de niveau, cohérence et état global avant publication ou review.",
     formats: ["Cross-platform", "CLI", "Open Source"],
-    primaryLabel: "Télécharger",
-    primaryUrl: "https://github.com/PierrotAudioTools/tools-pres/releases",
+    primaryLabel: "Ouvrir le projet",
+    primaryUrl: "https://github.com/PierrotAudioTools/tools-pres",
     secondaryLabel: "Documentation",
     secondaryUrl: "https://github.com/PierrotAudioTools/tools-pres",
     note: "Utile pour vérifier vite un render, un stem pack ou un export final."
@@ -28,6 +30,7 @@ const tools = [
   {
     name: "Stem Packager",
     category: "Delivery",
+    access: "Téléchargement direct",
     status: "Disponible",
     description:
       "Assemble des stems, bounces et éléments de projet dans une structure propre, prête à archiver, partager ou envoyer à un collaborateur.",
@@ -61,6 +64,9 @@ function createToolCard(tool) {
     </div>
     <p class="tool-description">${tool.description}</p>
     <div class="tool-meta" aria-label="Formats et disponibilité">${metaItems}</div>
+    <div class="tool-access-row">
+      <span class="tool-access">${tool.access}</span>
+    </div>
     <div class="tool-links">
       <a class="primary-link" href="${tool.primaryUrl}" target="_blank" rel="noreferrer">${tool.primaryLabel}</a>
       <a class="secondary-link" href="${tool.secondaryUrl}" target="_blank" rel="noreferrer">${tool.secondaryLabel}</a>
