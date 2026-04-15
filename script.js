@@ -8,7 +8,6 @@ const tools = [
       "OSC server & client",
       "Cartesian and Polar modes",
       "Per-object XYZ control",
-      "Multi-instance hub mode",
       "DAW automation"
     ],
     formats: ["macOS ARM", "VST3", "AU"],
