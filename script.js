@@ -47,24 +47,23 @@ function createToolCard(tool, index) {
 
   const metaItems = tool.formats.map((item) => `<span>${item}</span>`).join("");
 
-  const screenshotHtml = tool.screenshot
-    ? `<div class="tool-screenshot">
+  const previewHtml = tool.screenshot
+    ? `<div class="tool-preview">
         <img src="${tool.screenshot}" alt="${tool.screenshotAlt}" loading="lazy" />
       </div>`
     : "";
 
   card.innerHTML = `
-    <div class="tool-topline">
-      <span class="tool-status">${tool.status}</span>
+    <div class="tool-info">
+      <h3>${tool.name}</h3>
+      <p class="tool-description">${tool.description}</p>
+      <div class="tool-meta" aria-label="Info">${metaItems}</div>
+      <div class="tool-links">
+        <a class="primary-link" href="${tool.primaryUrl}" target="_blank" rel="noreferrer">${tool.primaryLabel}</a>
+        <a class="secondary-link" href="${tool.secondaryUrl}" target="_blank" rel="noreferrer">${tool.secondaryLabel}</a>
+      </div>
     </div>
-    <h3>${tool.name}</h3>
-    <p class="tool-description">${tool.description}</p>
-    <div class="tool-meta" aria-label="Info">${metaItems}</div>
-    ${screenshotHtml}
-    <div class="tool-links">
-      <a class="primary-link" href="${tool.primaryUrl}" target="_blank" rel="noreferrer">${tool.primaryLabel}</a>
-      <a class="secondary-link" href="${tool.secondaryUrl}" target="_blank" rel="noreferrer">${tool.secondaryLabel}</a>
-    </div>
+    ${previewHtml}
   `;
 
   return card;
