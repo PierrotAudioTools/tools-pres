@@ -2,14 +2,14 @@ const tools = [
   {
     name: "ADM-OSC Panner",
     category: "OSC",
-    access: "Téléchargement direct",
-    status: "Disponible",
+    access: "Direct download",
+    status: "Available",
     description:
-      "Plugin VST/AU pour macOS Apple Silicon. Reçoit, transmet et enregistre des messages OSC depuis n'importe quel DAW compatible. Idéal pour le positionnement audio immersif via le protocole ADM-OSC.",
+      "VST/AU plugin for macOS Apple Silicon. Receive, transmit and record ADM-OSC messages from any compatible DAW. Designed for immersive audio workflows.",
     formats: ["macOS ARM", "VST3", "AU", "OSC"],
     screenshot: "./assets/ADM-OSC_Panner/ADM-OSC Panner_fullview.png",
-    screenshotAlt: "Capture d'écran du plugin ADM-OSC Panner",
-    primaryLabel: "Télécharger",
+    screenshotAlt: "ADM-OSC Panner plugin screenshot",
+    primaryLabel: "Download",
     primaryUrl: "https://github.com/PierrotAudioTools/ADM-OSC-Panner/releases",
     secondaryLabel: "GitHub",
     secondaryUrl: "https://github.com/PierrotAudioTools/ADM-OSC-Panner"
@@ -17,14 +17,14 @@ const tools = [
   {
     name: "LTC Reader",
     category: "Timecode",
-    access: "Téléchargement direct",
-    status: "Disponible",
+    access: "Direct download",
+    status: "Available",
     description:
-      "Plugin VST/AU pour macOS Apple Silicon. Reçoit et décode du timecode au format LTC (Linear Timecode) avec sélection du frame rate. Compatible avec tous les DAW supportant les entrées audio.",
+      "VST/AU plugin for macOS Apple Silicon. Receive and decode LTC (Linear Timecode) from any audio input, with frame rate selection.",
     formats: ["macOS ARM", "VST3", "AU", "LTC"],
     screenshot: "./assets/LTC-Reader/LTC-Reader-working.png",
-    screenshotAlt: "Capture d'écran du plugin LTC Reader",
-    primaryLabel: "Télécharger",
+    screenshotAlt: "LTC Reader plugin screenshot",
+    primaryLabel: "Download",
     primaryUrl: "https://github.com/PierrotAudioTools/LTC-Reader/releases",
     secondaryLabel: "GitHub",
     secondaryUrl: "https://github.com/PierrotAudioTools/LTC-Reader"
@@ -57,7 +57,7 @@ function createToolCard(tool, index) {
       <h3>${tool.name}</h3>
     </div>
     <p class="tool-description">${tool.description}</p>
-    <div class="tool-meta" aria-label="Informations">${metaItems}</div>
+    <div class="tool-meta" aria-label="Info">${metaItems}</div>
     ${screenshotHtml}
     <div class="tool-access-row">
       <span class="tool-access">${tool.access}</span>
