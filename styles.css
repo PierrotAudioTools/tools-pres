@@ -164,8 +164,8 @@ body::before {
 }
 
 .intro-section h1 {
-  max-width: 16ch;
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  max-width: 24ch;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
 }
 
 .intro-text,
@@ -215,7 +215,7 @@ body::before {
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
 }
 
 .section-heading p,
@@ -230,7 +230,7 @@ body::before {
 }
 
 .tools-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tool-card {
@@ -392,6 +392,18 @@ body::before {
   }
 }
 
+.tool-screenshot {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.tool-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   .tools-grid {
     grid-template-columns: 1fr;
@@ -424,6 +436,6 @@ body::before {
 
   .intro-section h1,
   .section-heading h2 {
-    font-size: clamp(2.2rem, 13vw, 3.4rem);
+    font-size: clamp(1.4rem, 8vw, 2rem);
   }
 }
